@@ -1,0 +1,4 @@
+dotconf
+=======
+
+Various configuration files.
