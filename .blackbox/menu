@@ -1,0 +1,22 @@
+[begin] (nav)
+	[exec]	(term) {gnome-terminal}
+	[exec]	(rxvt) {urxvt}
+	[exec]	(fs) {nautilus}
+	[submenu] (dev)
+		[exec] (gedit) {gedit}
+		[exec] (giggle) {giggle}
+		[exec] (mysql) {mysql-workbench}
+		[exec] (oracle) {sqldeveloper}
+	[end]
+	[submenu] (doc)
+		[exec] (doc) {libreoffice --writer}
+		[exec] (calc) {libreoffice --calc}
+	[end]
+	[submenu] (net)
+		[exec] (irc) {hexchat}
+		[exec] (mail) {claws-mail}
+		[exec] (pidgin) {pidgin}
+		[exec] (www) {chromium}
+	[end]
+	[exit] (die)
+[end]
