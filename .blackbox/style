@@ -7,7 +7,7 @@
 *color1: rgb:dd/dd/d7
 *color2: rgb:ee/ee/e7
 
-*font: Droid Sans-9
+*font: Droid Sans-8
 
 *borderColor: black
 *borderWidth: 1
@@ -69,5 +69,5 @@ window.grip.focus.backgroundColor: rgb:77/77/74
 window.grip.unfocus.appearance: raised solid border
 
 window*alignment: center
-window.font: Droid Sans-9:style=Bold
-window.handleHeight: 8
+window.font: Droid Sans-8:style=Bold
+window.handleHeight: 4

@@ -1,10 +1,7 @@
 [begin] (nav)
-	[exec]	(term) {gnome-terminal}
-	[exec]	(rxvt) {urxvt}
-	[exec]	(fs) {nautilus}
+	[exec]	(term) {terminator}
 	[submenu] (dev)
 		[exec] (gedit) {gedit}
-		[exec] (giggle) {giggle}
 		[exec] (mysql) {mysql-workbench}
 		[exec] (oracle) {sqldeveloper}
 	[end]
@@ -13,9 +10,11 @@
 		[exec] (calc) {libreoffice --calc}
 	[end]
 	[submenu] (net)
-		[exec] (irc) {hexchat}
+		[exec] (deluge) {deluge}
+		[exec] (hexchat) {hexchat}
 		[exec] (mail) {claws-mail}
 		[exec] (pidgin) {pidgin}
+		[exec] (rdesktop) {rdesktop}
 		[exec] (www) {chromium}
 	[end]
 	[exit] (die)
