@@ -1,3 +1,2 @@
-#exec conky &
-#exec pidgin &
-exec /usr/bin/gnome-session
+exec conky &
+exec /usr/bin/blackbox
