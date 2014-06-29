@@ -1,0 +1,83 @@
+alignment					middle_right
+background					yes
+color1						888
+default_bar_size			256 6
+default_color				eee
+default_graph_size			256 24
+double_buffer				yes
+maximum_width				256
+own_window					yes
+own_window_type				desktop
+own_window_transparent		yes
+total_run_times				0
+update_interval				1
+update_interval_on_battery	10
+uppercase					no
+use_xft						yes
+xftalpha					1
+xftfont						Droid Sans Mono:size=8
+
+default_shade_color black
+default_outline_color eee
+
+gap_x 1
+gap_y 1
+
+no_buffers yes
+uppercase no
+
+TEXT
+${color1}$nodename
+$sysname $kernel $machine
+
+${time %m/%d/%Y}${alignr}${time %I:%M:%S %p}
+
+${color1}uptime:${alignr}${color}$uptime
+
+${color1}battery: ${color}${battery_percent}% (${battery_time})
+${battery_bar}
+
+${color1}cpu:${color} ${cpu}% | ${acpitemp}C | ${freq}MHz
+${cpugraph}
+${color ddaa00}${top name 1}${alignr}${top cpu 1}
+${color}${top name 2}${alignr}${top cpu 2}
+${top name 3}${alignr}${top cpu 3}
+${top name 4}${alignr}${top cpu 4}
+${top name 5}${alignr}${top cpu 5}
+
+${color1}memory:${color} ${memperc}% | $mem/$memmax
+${membar}
+buffered: ${alignr}${buffers}
+cached: ${alignr}${cached}
+swapped: ${alignr}${swap} / ${swapmax}
+
+${color ddaa00}${top_mem name 1}${alignr}${top_mem mem 1}${color}
+${top_mem name 2}${alignr}${top_mem mem 2}
+${top_mem name 3}${alignr}${top_mem mem 3}
+${top_mem name 4}${alignr}${top_mem mem 4}
+${top_mem name 5}${alignr}${top_mem mem 5}
+${top_mem name 6}${alignr}${top_mem mem 6}
+${top_mem name 7}${alignr}${top_mem mem 7}
+${top_mem name 8}${alignr}${top_mem mem 8}
+${top_mem name 9}${alignr}${top_mem mem 9}
+
+${color1}/dev/sda | ${fs_size} (${fs_free} free)${color}
+${fs_bar}
+reads: ${diskio_read}${alignr}writes: ${diskio_write}
+${diskiograph_read 24,124} ${diskiograph_write 24,124}
+
+${color1}wired:${color} enp4s0 (${addr enp4s0})
+down: ${downspeed enp4s0}${alignr}up: ${upspeed enp4s0}
+${downspeedgraph enp4s0 24,124} ${upspeedgraph enp4s0 24,124}
+total down: ${totaldown enp4s0}${alignr}total up: ${totalup enp4s0}
+
+${color1}wireless:${color} wlp3s0 (${addr wlp3s0})
+network essid: ${alignr}${wireless_essid wlp3s0}
+access mac: ${alignr}${wireless_ap wlp3s0}
+mode: ${alignr}${wireless_mode wlp3s0}
+link quality: ${alignr}${wireless_link_qual_perc wlp3s0} %
+bitrate: ${alignr}${wireless_bitrate wlp3s0}
+
+down: ${downspeed wlp3s0}${alignr}up: ${upspeed wlp3s0}
+${downspeedgraph wlp3s0 24,124} ${upspeedgraph wlp3s0 24,124}
+total down: ${totaldown wlp3s0}${alignr}total up: ${totalup wlp3s0}

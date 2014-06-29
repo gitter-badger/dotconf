@@ -1,0 +1,28 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.autohint: true
+Xft.lcdfilter: lcddefault
+
+URxvt*font: xft:Monospace:pixelsize=11
+URxvt.depth:				32
+URxvt.geometry:			90x30
+URxvt.loginShell:		true
+URxvt.internalBorder:	3
+URxvt.lineSpace:			0
+URxvt*transparent:		false
+URxvt*tintColor:			S_base03
+URxvt*shading:			15
+URxvt*saveLines:			12000
+URxvt*foreground:		#ccc
+URxvt*background:		#000
+ 
+# scrollbar - true (default) or false
+URxvt*scrollBar: true
+ 
+URxvt*scrollBar_right: true
+ 
+# scrollbar style - URxvt (default), plain, next, or xterm
+URxvt*scrollstyle: xterm
