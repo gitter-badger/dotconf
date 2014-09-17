@@ -1,3 +1,2 @@
-exec bbkeys &
 exec conky &
-exec /usr/bin/blackbox
+exec /usr/bin/fluxbox
