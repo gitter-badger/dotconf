@@ -66,12 +66,15 @@ ${fs_bar}
 reads: ${diskio_read}${alignr}writes: ${diskio_write}
 ${diskiograph_read 24,124} ${diskiograph_write 24,124}
 
-${color1}wired:${color} enp4s0 (${addr enp4s0})
+${if_existing /proc/net/route enp4s0}${color1}wired:${color} enp4s0 (${addr enp4s0})
 down: ${downspeed enp4s0}${alignr}up: ${upspeed enp4s0}
 ${downspeedgraph enp4s0 24,124} ${upspeedgraph enp4s0 24,124}
 total down: ${totaldown enp4s0}${alignr}total up: ${totalup enp4s0}
-
-${color1}wireless:${color} wlp3s0 (${addr wlp3s0})
+${endif}${if_existing /proc/net/route enp9s0}${color1}wired:${color} enp9s0 (${addr enp9s0})
+down: ${downspeed enp9s0}${alignr}up: ${upspeed enp9s0}
+${downspeedgraph enp9s0 24,124} ${upspeedgraph enp9s0 24,124}
+total down: ${totaldown enp9s0}${alignr}total up: ${totalup enp9s0}
+${endif}${if_existing /proc/net/route wlp3s0}${color1}wireless:${color} wlp3s0 (${addr wlp3s0})
 network essid: ${alignr}${wireless_essid wlp3s0}
 access mac: ${alignr}${wireless_ap wlp3s0}
 mode: ${alignr}${wireless_mode wlp3s0}
@@ -81,3 +84,14 @@ bitrate: ${alignr}${wireless_bitrate wlp3s0}
 down: ${downspeed wlp3s0}${alignr}up: ${upspeed wlp3s0}
 ${downspeedgraph wlp3s0 24,124} ${upspeedgraph wlp3s0 24,124}
 total down: ${totaldown wlp3s0}${alignr}total up: ${totalup wlp3s0}
+${endif}${if_existing /proc/net/route wlp12s0}${color1}wireless:${color} wlp12s0 (${addr wlp12s0})
+network essid: ${alignr}${wireless_essid wlp12s0}
+access mac: ${alignr}${wireless_ap wlp12s0}
+mode: ${alignr}${wireless_mode wlp12s0}
+link quality: ${alignr}${wireless_link_qual_perc wlp12s0} %
+bitrate: ${alignr}${wireless_bitrate wlp12s0}
+
+down: ${downspeed wlp12s0}${alignr}up: ${upspeed wlp12s0}
+${downspeedgraph wlp12s0 24,124} ${upspeedgraph wlp12s0 24,124}
+total down: ${totaldown wlp12s0}${alignr}total up: ${totalup wlp12s0}
+${endif}
