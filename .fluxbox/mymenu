@@ -1,20 +1,20 @@
 [begin] (nav)
     [exec] (term) {terminator}
     [submenu] (dev)
-		[exec] (geany) {geany} </usr/share/icons/hicolor/16x16/apps/geany.png>
-	[end]
-	[submenu] (net)
-		[exec]   (chromium) {chromium} </usr/share/icons/hicolor/16x16/apps/chromium-browser.png>
-	[end]
-	[submenu] (Fluxbox menu)
-		[config] (Configure)
-		[workspaces] (Workspace List) 
-		[submenu] (Tools)
-			[exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|gxmessage -file - -center} 
-		[end]
-		[commanddialog] (Fluxbox Command) 
-		[reconfig] (Reload config) 
-		[restart] (Restart) 
-	[end]
-	[exit] (die)
+        [exec]  (geany) {geany} </usr/share/icons/hicolor/48x48/apps/geany.png>
+        [exec]  (pgadmin) {pgadmin3} </usr/share/pixmaps/pgadmin3.png>
+    [end]
+    [submenu] (net)
+        [exec]  (chromium) {chromium} </usr/share/icons/hicolor/32x32/apps/chromium-browser.png>
+        [exec]  (deluge)    {deluge}    </usr/share/icons/hicolor/32x32/apps/deluge.png>
+        [exec]  (ps3mediaserver)    {ps3mediaserver}    </usr/share/icons/hicolor/256x256/apps/ps3mediaserver.png>
+        [exec]  (wicd)    {wicd-gtk}    </usr/share/icons/hicolor/192x192/apps/wicd-gtk.png>
+    [end]
+    [submenu] (fluxbox)
+        [config] (Configure)
+        [commanddialog] (Fluxbox Command) 
+        [reconfig] (Reload config) 
+        [restart] (Restart) 
+    [end]
+    [exit] (die)
 [end]
