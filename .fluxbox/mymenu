@@ -4,6 +4,8 @@
         [exec]  (geany) {geany} </usr/share/icons/hicolor/48x48/apps/geany.png>
         [exec]  (pgadmin) {pgadmin3} </usr/share/pixmaps/pgadmin3.png>
     [end]
+    [submenu] (doc)
+        [exec]  (gnumeric)  {gnumeric}
     [submenu] (net)
         [exec]  (chromium) {chromium} </usr/share/icons/hicolor/32x32/apps/chromium-browser.png>
         [exec]  (deluge)    {deluge}    </usr/share/icons/hicolor/32x32/apps/deluge.png>
