@@ -6,6 +6,7 @@
     [end]
     [submenu] (doc)
         [exec]  (gnumeric)  {gnumeric}
+    [end]
     [submenu] (net)
         [exec]  (chromium) {chromium} </usr/share/icons/hicolor/32x32/apps/chromium-browser.png>
         [exec]  (deluge)    {deluge}    </usr/share/icons/hicolor/32x32/apps/deluge.png>
